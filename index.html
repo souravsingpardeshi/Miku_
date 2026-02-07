@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Week for Miku 💝</title>
+    <meta name="description" content="A week of love and surprises for Miku">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="hearts-bg" id="heartsBg"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <h1 class="header-title">
+            <span class="heart-icon">💕</span>
+            Valentine's Week for Miku
+            <span class="heart-icon">💕</span>
+        </h1>
+        <p class="header-subtitle">8 Days of Love & Surprises</p>
+        <div class="countdown" id="countdown">
+            <span id="countdownText">Loading...</span>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+        <!-- Progress Bar -->
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+            <p class="progress-text" id="progressText">0 / 8 Days Completed</p>
+        </div>
+
+        <!-- Day Cards Grid -->
+        <div class="days-grid">
+            <!-- Rose Day -->
+            <div class="day-card locked" id="day-rose" data-day="rose" data-date="2026-02-07">
+                <div class="day-card-header">
+                    <span class="day-emoji">🌹</span>
+                    <h2>Rose Day</h2>
+                    <p class="day-date">February 7</p>
+                </div>
+                <div class="day-card-body">
+                    <p class="day-description">Collect virtual roses to create a beautiful bouquet</p>
+                    <div class="lock-overlay">
+                        <span class="lock-icon">🔒</span>
+                        <p class="unlock-text">Unlocks on Feb 7</p>
+                    </div>
+                </div>
+                <button class="day-button" disabled>Locked</button>
+            </div>
+
+            <!-- Propose Day -->
+            <div class="day-card locked" id="day-propose" data-day="propose" data-date="2026-02-08">
+                <div class="day-card-header">
+                    <span class="day-emoji">💍</span>
+                    <h2>Propose Day</h2>
+                    <p class="day-date">February 8</p>
+                </div>
+                <div class="day-card-body">
+                    <p class="day-description">Solve the heart puzzle to reveal a special message</p>
+                    <div class="lock-overlay">
+                        <span class="lock-icon">🔒</span>
+                        <p class="unlock-text">Unlocks on Feb 8</p>
+                    </div>
+                </div>
+                <button class="day-button" disabled>Locked</button>
+            </div>
+
+            <!-- Chocolate Day -->
+            <div class="day-card locked" id="day-chocolate" data-day="chocolate" data-date="2026-02-09">
+                <div class="day-card-header">
+                    <span class="day-emoji">🍫</span>
+                    <h2>Chocolate Day</h2>
+                    <p class="day-date">February 9</p>
+                </div>
+                <div class="day-card-body">
+                    <p class="day-description">Match chocolate pairs in this sweet memory game</p>
+                    <div class="lock-overlay">
+                        <span class="lock-icon">🔒</span>
+                        <p class="unlock-text">Unlocks on Feb 9</p>
+                    </div>
+                </div>
+                <button class="day-button" disabled>Locked</button>
+            </div>
+
+            <!-- Teddy Day -->
+            <div class="day-card locked" id="day-teddy" data-day="teddy" data-date="2026-02-10">
+                <div class="day-card-header">
+                    <span class="day-emoji">🧸</span>
+                    <h2>Teddy Day</h2>
+                    <p class="day-date">February 10</p>
+                </div>
+                <div class="day-card-body">
+                    <p class="day-description">Dress up an adorable teddy bear just for you</p>
+                    <div class="lock-overlay">
+                        <span class="lock-icon">🔒</span>
+                        <p class="unlock-text">Unlocks on Feb 10</p>
+                    </div>
+                </div>
+                <button class="day-button" disabled>Locked</button>
+            </div>
+
+            <!-- Promise Day -->
+            <div class="day-card locked" id="day-promise" data-day="promise" data-date="2026-02-11">
+                <div class="day-card-header">
+                    <span class="day-emoji">🤝</span>
+                    <h2>Promise Day</h2>
+                    <p class="day-date">February 11</p>
+                </div>
+                <div class="day-card-body">
+                    <p class="day-description">Add promises to our growing promise tree</p>
+                    <div class="lock-overlay">
+                        <span class="lock-icon">🔒</span>
+                        <p class="unlock-text">Unlocks on Feb 11</p>
+                    </div>
+                </div>
+                <button class="day-button" disabled>Locked</button>
+            </div>
+
+            <!-- Hug Day -->
+            <div class="day-card locked" id="day-hug" data-day="hug" data-date="2026-02-12">
+                <div class="day-card-header">
+                    <span class="day-emoji">🤗</span>
+                    <h2>Hug Day</h2>
+                    <p class="day-date">February 12</p>
+                </div>
+                <div class="day-card-body">
+                    <p class="day-description">Send unlimited virtual hugs to fill the warmth meter</p>
+                    <div class="lock-overlay">
+                        <span class="lock-icon">🔒</span>
+                        <p class="unlock-text">Unlocks on Feb 12</p>
+                    </div>
+                </div>
+                <button class="day-button" disabled>Locked</button>
+            </div>
+
+            <!-- Kiss Day -->
+            <div class="day-card locked" id="day-kiss" data-day="kiss" data-date="2026-02-13">
+                <div class="day-card-header">
+                    <span class="day-emoji">💋</span>
+                    <h2>Kiss Day</h2>
+                    <p class="day-date">February 13</p>
+                </div>
+                <div class="day-card-body">
+                    <p class="day-description">Catch falling kisses in this fun game</p>
+                    <div class="lock-overlay">
+                        <span class="lock-icon">🔒</span>
+                        <p class="unlock-text">Unlocks on Feb 13</p>
+                    </div>
+                </div>
+                <button class="day-button" disabled>Locked</button>
+            </div>
+
+            <!-- Valentine's Day -->
+            <div class="day-card locked valentine-special" id="day-valentine" data-day="valentine" data-date="2026-02-14">
+                <div class="day-card-header">
+                    <span class="day-emoji">💖</span>
+                    <h2>Valentine's Day</h2>
+                    <p class="day-date">February 14</p>
+                </div>
+                <div class="day-card-body">
+                    <p class="day-description">A special digital love letter awaits you...</p>
+                    <div class="lock-overlay">
+                        <span class="lock-icon">🔒</span>
+                        <p class="unlock-text">Unlocks on Feb 14</p>
+                    </div>
+                </div>
+                <button class="day-button" disabled>Locked</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal for Day Activities -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be dynamically inserted -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Made with 💝 for Miku</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
